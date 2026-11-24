@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mind Matrix — Cognitive IQ Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    <div class="hud">
+      <div>Level: <span id="levelDisplay">1</span></div>
+      <div>Score: <span id="scoreDisplay">0</span></div>
+      <div>Est. IQ: <span id="iqDisplay">100</span></div>
+    </div>
+
+    <div class="matrix-grid" id="gridContainer"></div>
+
+    <div class="status-bar" id="statusText">Press Start to begin neural evaluation.</div>
+
+    <div id="startScreen" class="overlay">
+      <h1>MIND MATRIX</h1>
+      <p>Train spatial working memory and sequence retention speed. Memorize the glowing grid patterns as playback speed scales up!</p>
+      <button class="btn" onclick="startGame()">Start Training</button>
+    </div>
+
+    <div id="gameOverScreen" class="overlay hidden">
+      <h1>NEURAL CAPACITY REACHED</h1>
+      <p id="overText">Training complete.</p>
+      <button class="btn" onclick="startGame()">Retrain</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
